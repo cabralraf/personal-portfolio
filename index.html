@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portifólio do Rafael</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="./css/style.css">
+        <script src="./js/script.js"></script>
+        <script src="https://kit.fontawesome.com/04105b48e7.js" crossorigin="anonymous"></script>
+<!--         <link rel="preconnect" href="https://fonts.gstatic.com"> -->
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&family=Vollkorn&display=swap" rel="stylesheet">
+    </head>
+
+    <body id="body" class="light">
+
+        <header>   <!-- Entrada da página - tela de boas vindas -->
+            <div id="landing-container">
+                <button class="navbar-toggler">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <h1>Olá!</h1>
+                <h6>Meu nome é Rafael, um futuro desenvolvedor front-end. 
+                <br>Boas vindas ao meu portifólio!</h6>
+            </div>
+
+        </header> <!-- Fim da entrada da página -->
+
+
+        <div id="container"><!-- container da página geralzão -->
+
+
+            <!-- Barra de navegação -->
+            <nav id="navbar" class="navbar navbar-expand-sm navbar-dark bg-dark">
+                
+                        <!-- Menu Hamburguer -->
+                <button class="navbar-toggler" data-toggle="collapse" 
+                data-target="#navlinks">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- light switch -->
+                <div class="lights">
+                    <i class="fas fa-lightbulb"></i>
+                    <i class="fas fa-power-off" onclick="temaSwitch()"></i>
+                </div>
+
+                <div class="collapse navbar-collapse" id="navlinks">
+                <ul>
+                    <a href="#body"><li>Home</li></a>
+                    <a href="#sobre"><li>Sobre mim</li></a>
+                    <a href="#projetos"><li>Projetos</li></a>
+                    <a href="#contato"><li>Contato</li></a>
+                </ul>
+
+            </nav>
+            <!-- fim barra de navegação -->
+
+            <!-- Início da seção principal -->
+                <main>
+                    <div class="cornao"><!-- início artigo sobre mim -->
+                        <section id="sobre"> 
+                            <h2>Um pouco sobre mim</h2>
+                            <div class="div-com-foto">
+                                <img src="./media/eu.jpg" width=200px height=200px alt="">
+                                <p>Meu nome é Rafael, tenho 28 anos e moro em Belo Horizonte com meus gatos. Atualmente, em decorrência da desistência de minha carreira anterior, trabalho como agente de vendas em uma empresa de call center. Meus objetivos são estar em constante aprendizado e crescimento profissional e encontrar o meu lugar no mercado de trabalho de tecnologia da informação. Um objetivo é mutuamente fundamental para alcançar o outro!</p>
+                            </div>
+
+                            <h3>Perfil profissional e destaques</h3>
+                            <p>No ambiente de trabalho, sou uma pessoa descontraída - estou sempre buscando harmonia com aqueles(as) que dividem o ambiente de trabalho, mesmo com foco nas minhas tarefas e da equipe. Além disso, destaco-me por estar sempre disposto a ajudar ao próximo, seja com simples respostas e relatos sobre a minha experiência, ou com ajuda em procedimentos que possam estar gerando dificuldades. Por ser autodidata com a maioria dos recursos e gostar de explorar e experimentar, as pessoas comumente recorrem a mim.</p>
+
+                            <h3>Por que ser desenvolvedor?</h3>
+                            <p>Ser desenvolvedor não foi a minha primeira escolha de carreira - ao longo dos anos, cheguei a tentar duas graduações em áreas completamente distintas. Quando decidi abandonar minha carreira anterior, o próximo passo, logicamente, era decidir que outra carreira eu poderia seguir. O fato de eu ter conversado anteriormente com amigos que já estavam estudando para serem profissionais de TI influenciou bastante na minha escolha: no fim das contas, agora eu vejo a área de tecnologia da informação como uma área em constante evolução e com muita diversidade pois, além de as lógicas de programação estarem presentes nas mais diversas partes de nossas vidas, há sempre diversas soluções para um mesmo problema, mesmo que em uma mesma linguagem - e tais soluções variam de acordo com a identidade de cada profissional!</p>
+
+                            <h3>Meu primeiro contato com desenvolvimento e programação</h3>
+                            <p>Minha primeira escolha de graduação foi um curso de tecnologia na área de eletrônica: primeiro me formei como técnico em mecatrônica, e depois busquei me formar como tecnólogo em automação industrial. Parte do currículo de ambos os cursos envolve programação: principalmente linguagem C++, mas também programação robótica pela linguagem Assembly e de máquinas de torno CNC. A lógica aplicada à linguagem C++ em muito se assemelha àquela das linguagens mais utilizadas em desenvolvimento web. O fato de a matéria que envolvia linguagem C++ ser uma das minhas favoritas, também, certamente influenciou bastante na minha decisão.</p>
+
+                        </section>
+                    </div> <!-- fim artigo sobre mim -->
+
+
+                    <section id="projetos"> <!-- início artigo projetos -->
+                        <h2>Projetos</h2>
+                        <p>Confira abaixo alguns de meus projetos. Clique em um projeto para ampliá-lo.</p>
+
+                        <div class="project-container">
+
+                            <div id="project-focus">
+                                <img src="./media/img-portfolio.png" alt="">
+                                <h2>Portifólio Pessoal</h2>
+                                <p>Este portifólio, além de ser o registro principal do meu trajeto como desenvolvedor, é também um dos meus projetos. Desenvolvido inteiramente em HTML, CSS e JavaScript, sem o uso de nenhuma biblioteca, ele conta com boa parte das habilidades que eu desenvolvi nesses três recursos.
+                                </p>
+                            </div>
+                                
+                            <a href="#project-focus">
+                                <div class="project-tile" onclick="changeFocus()">
+                                    <img src="./media/img-portfolio.png" alt="" class="project-img">
+                                    <h3>Portifólio Pessoal</h3>
+                                    <!-- Este portifólio, além de ser o registro principal do meu trajeto como desenvolvedor, é também um dos meus projetos. Desenvolvido inteiramente em HTML, CSS e JavaScript, sem o uso de nenhuma biblioteca, ele conta com boa parte das habilidades que eu desenvolvi nesses três recursos. -->
+                                </div>
+                            </a>
+                            
+                            <a href="#project-focus">
+                                <div class="project-tile" onclick="changeFocus()">
+                                    <img src="https://i.picsum.photos/id/464/200/200.jpg?hmac=rT0rkzkukXVK3LYD1qHhc-Yqk0dFyIYoFk8wuNpCkAY" alt="" class="project-img">
+                                    <h3>Lorem Ipsum</h3>
+                                    <!-- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ultrices nisi ut tempus pharetra. Suspendisse dui leo, aliquet sit amet hendrerit in, semper id nunc. -->
+                                </div>
+                            </a>
+                            
+                            <a href="#project-focus">
+                                <div class="project-tile" onclick="changeFocus()">
+                                    <img src="https://i.picsum.photos/id/925/200/200.jpg?hmac=GRls_CYMB5cOj1RE3IwjOC0zUwiPc25idJNavVPWbtM" alt="" class="project-img">
+                                    <h3>Lorem two</h3>
+                                    <!-- Vestibulum metus ligula, mollis et lobortis eget, sollicitudin non massa. Aenean eu diam non velit ultricies commodo at vel quam. Morbi vestibulum purus eget scelerisque sagittis. -->
+                                </div>
+                            </a>
+                            
+                            <a href="#project-focus">
+                                <div class="project-tile" onclick="changeFocus()">
+                                    <img src="https://i.picsum.photos/id/1072/200/200.jpg?hmac=jar1_w-0fdzV_d70mmk9VzkBQA9B_oSZuZs21we31ZE" alt="" class="project-img">
+                                    <h3>Lorem three dolorem sit amet interimo adapare dorime ameno ameno latire latire mo</h3>
+                                    <!-- Duis pharetra non massa nec posuere. Nam maximus eros quis nisl vehicula lacinia. Nulla scelerisque, metus eget molestie rutrum, velit magna dictum orci, a semper tellus lectus vel nulla. -->
+                                </div>
+                            </a>
+                            
+                            <a href="#project-focus">
+                                <div class="project-tile" onclick="changeFocus()">
+                                    <img src="https://i.picsum.photos/id/839/200/200.jpg?hmac=IKyeqXa3iOwFkcM24B_X_Qjf9643wuDTCsTiM3T6AZg" alt="" class="project-img">
+                                    <h3>Lorem ipsum</h3>
+                                    <!-- Donec justo orci, aliquet id molestie quis, congue in elit. Aenean ac sodales tellus, id bibendum neque. -->
+                                </div>
+                            </a>
+                                <div style="clear: both;"></div>
+                        </div>
+                    </section> <!-- fim artigo projetos -->
+
+
+                    <div class="cornao"> <!-- início artigo contato -->
+                        <section id="contato">
+                            <h2>Contato:</h2>
+                            <div class="contactainer">
+                                <a href="mailto:c.j.rafael92@gmail.com" target="_blank"><i class="far fa-envelope contacticon"></i></a>
+                                <a href="https://wa.me/5531983951635" target="_blank"><i class="fab fa-whatsapp contacticon"></i></a>
+                                <a href="https://www.linkedin.com/in/cabralraf" target="_blank"><i class="fab fa-linkedin-in contacticon"></i></a>
+                                <a href="https://github.com/cabralraf" target="_blank"><i class="fab fa-github contacticon"></i></a>
+                            </div>
+                        </section>
+                    </div> <!-- fim artigo contato -->
+                </main>
+        </div> <!-- fim container geralzão -->
+
+        <footer class="cornao"> <!-- footer -->
+            <span>2020, Rafael Cabral Junqueira</span>
+        </footer>
+
+        <!-- links script JS -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    </body>
+
+</html>

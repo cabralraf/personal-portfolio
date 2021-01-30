@@ -1,0 +1,297 @@
+* {
+    margin: 0;
+}
+
+/* Tema escuro */
+.dark {
+    height: 100vh;
+    background: radial-gradient(#222, #000) fixed no-repeat;
+    color: #888;
+}
+
+ .dark .cornao {
+    background-color: #111;
+    padding: 2em 1.5em 3em;
+} 
+
+.dark a {
+    color: #888;
+}
+
+.dark .project-tile, .dark #project-focus img {
+    background-color: #444;
+    box-shadow: 2px 2px 10px rgb(255, 242, 171);
+}
+
+/* tema claro */
+.light {
+    height: 100vh;
+    background: radial-gradient(#fff, rgb(255, 245, 212)) fixed no-repeat;
+    color: rgb(97, 86, 26);
+}
+
+.light .cornao{
+    background-color: rgb(252, 246, 225);
+    padding: 2em 1.5em 3em;
+} 
+
+.light a {
+    color: rgb(97, 86, 26);
+}
+
+
+
+.light .project-tile, .light #project-focus img {
+    background-color: rgb(255, 242, 199);
+    box-shadow: 2px 2px 10px #000;
+}
+
+.corsim {
+    padding: 2em 1.5em 3em;
+}
+
+h1, h2, h3, h6, p, li a {
+    font-family: 'Vollkorn', serif;
+}
+
+p, li a {
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+h1 {
+    font-size: 3.5rem;
+}
+
+h6 {
+    font-size: 1.2rem;
+}
+
+p {
+    text-align: justify;
+}
+
+
+/* Estilização e posições page landing */
+
+#landing-container {
+    margin: auto;
+}
+
+header {
+    font-size: 2.5em;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+}
+
+h1, h6 {
+    text-align: center;
+}
+
+/* navbar */
+#navbar {
+background-color: #555;
+position: -webkit-sticky;
+position: sticky;
+top: 0;
+z-index: 15;
+margin: 0;
+color: #ccc;
+padding-bottom: 1px;
+}
+
+#navlinks {
+    justify-content: space-around;
+    height: 100%;
+}
+#navbar ul {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#navbar a {
+    list-style: none;
+    margin: 0;
+    width: 100%;
+    padding: 15px 9%;
+}
+
+#navbar a:hover {
+    background: radial-gradient(#777, #555) no-repeat
+}
+
+#navbar a {
+    text-decoration: none;
+    color: #ccc;
+}
+
+.lights {
+    margin: 0px 0px 20px 20px;
+}
+
+.lights i {
+    margin: 0px 10px;
+}
+
+.fa-lightbulb {
+    font-size: 30px;
+}
+.dark .lights .fa-lightbulb {
+    color: #444;
+}
+
+.light .lights .fa-lightbulb {
+    color: rgb(252, 253, 179);
+}
+
+.fa-power-off {
+    cursor: pointer;
+}
+
+/* Seção principal */
+
+section {
+    max-width: 1020px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+h2 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-top: 1em;
+}
+
+p {
+    text-indent: 1.5em;
+}
+
+p, h2 {
+    margin-bottom: 50px;
+}
+
+h3 {
+    margin-bottom: 20px;
+    font-size: 1.5em;
+}
+
+.div-com-foto {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+}
+
+.div-com-foto p {
+    margin-left: 35px;
+    align-self: flex-end;
+}
+
+
+/* sessão projetos e tiles */
+
+.project-container {
+    max-width: 1020px;
+    justify-content: space-around;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#project-focus {
+    max-width: 1020px;
+    text-align: center;
+}
+
+#project-focus p {
+    font-size: 18px;
+    text-align: left;
+    text-indent: 2em;
+    margin: 20px;
+}
+
+#project-focus img {
+    width: 500px;
+    height: 500px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.project-tile {
+    float: left;
+    width: 300px;
+    padding: 20px;
+    background-color: #000;
+    margin: 20px;
+    text-align: justify;
+    border-radius: 4px;
+}
+
+.project-img {
+    width: 250px;
+    height: 250px;
+    margin-bottom: 20px;
+}
+
+
+
+/* Ícones de contato */
+.contacticon {
+    font-size: 4em;
+}
+
+.contactainer {
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5em 0;
+}
+
+.contacttext {
+    font-size: 18px;
+    line-height: 4em;
+    padding-left: 1em;
+}
+
+
+@media(max-width: 575px) {
+/*     #navbar {
+        position: relative;
+    } */
+    #navbar ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header {
+        font-size: 1em;
+    }
+
+    .contactainer {
+        flex-wrap: wrap;
+    }
+
+    .contacticon {
+        font-size: 2.5em;
+    }
+
+
+}
+
+/* footer */
+footer {
+    display: flex;
+    justify-content: center;
+    padding: 75px 0;
+}
+
+.footer-text {
+    display: flex;
+    flex-direction: column;
+}
